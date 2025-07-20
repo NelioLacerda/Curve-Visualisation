@@ -1,0 +1,128 @@
+html,
+body {
+    /* Full width of the viewport */
+    width: 100%;
+    /* Full height of the viewport */
+    height: 100%;
+    /* Removes default margin */
+    margin: 0;
+    /* Removes default border */
+    border: 0;
+    /* Hides overflow content */
+    overflow: hidden;
+    /* Ensures the body displays as a block */
+    display: block;
+    /* Sets a clean, modern font */
+    font-family: 'Geneva', sans-serif;
+    /* Modern dark background color */
+    background-color: #1e1e1e;
+    /* Sets default text color to white */
+    color: white;
+}
+
+/* Container for positioning elements */
+.container {
+    /* Allows absolute positioning of child elements */
+    position: relative;
+}
+
+/* Style for the command panel at the bottom of the screen */
+.commands {
+    /* Fixes the panel's position relative to the viewport */
+    position: fixed;
+    /* Positions the panel 10px from the bottom */
+    bottom: 10px;
+    /* Positions the panel 10px from the left */
+    left: 10px;
+    /* Smooth dark color with opacity */
+    background-color: rgba(33, 33, 33, 0.9);
+    /* Text color */
+    color: white;
+    /* Adds padding inside the panel */
+    padding: 15px;
+    /* Rounds the corners of the panel */
+    border-radius: 12px;
+    /* Sets the font size */
+    font-size: 14px;
+    /* Ensures the panel is on top of other elements */
+    z-index: 1000;
+    /* Adds a soft shadow for depth */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    /* Smooth transition for hover effects */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for the commands panel */
+.commands:hover {
+    /* Slight upward movement on hover */
+    transform: translateY(-5px);
+}
+
+/* Styles for the title in the commands panel */
+.commands h3 {
+    /* Removes default margin */
+    margin: 0;
+    /* Sets title font size */
+    font-size: 18px;
+    /* Makes the title bold */
+    font-weight: bold;
+    /* Centers the title text */
+    text-align: center;
+    /* Highlight color for the title */
+    color: #ffdd57;
+}
+
+/* Styles for the list of commands */
+.commands ul {
+    /* Removes default list styling */
+    list-style-type: none;
+    /* Removes padding */
+    padding: 0;
+    /* Adds margin at the top */
+    margin: 10px 0 0 0;
+}
+
+/* Styles for individual command items */
+.commands li {
+    /* Adds vertical spacing between items */
+    margin: 8px 0;
+    /* Uses flexbox for alignment */
+    display: flex;
+    /* Vertically centers items */
+    align-items: center;
+}
+
+/* Styles for the key highlights in command items */
+.commands li strong {
+    /* Highlight color for keys */
+    color: #ffdd57;
+    /* Adds space between the key and text */
+    margin-right: 8px;
+}
+
+/* Style for the info panel at the top left of the screen */
+.info {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(33, 33, 33, 0.9);
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 30px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#theta,
+#gamma {
+    /* Makes the text bold */
+    font-weight: bold;
+    /* Sets the font size */
+    font-size: 30px;
+    /* Highlight color for values */
+    color: #ffdd57;
+}

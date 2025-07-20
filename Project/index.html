@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script type="module" src="./app.js"></script>
+
+    <div class="container">
+        <canvas id="gl-canvas" width="512" height="512"></canvas>
+    </div>
+
+    <div class="commands">
+        <h3>🎮 Comandos:</h3>
+        <ul>
+            <li><strong>c</strong>: Limpar curvas</li>
+            <li><strong>+</strong>: Aumentar nº de segmentos</li>
+            <li><strong>-</strong>: Diminuir nº de segmentos</li>
+            <li><strong>></strong>: Aumentar velocidade</li>
+            <li><strong><</strong>: Diminuir velocidade</li>
+            <li><strong>Espaço</strong>: Pausar/Retomar a animação</li>
+            <li><strong>p</strong>: Esconder/Mostrar pontos de amostragem</li>
+            <li><strong>l</strong>: Esconder/Mostrar segmentos de reta</li>
+            <li><strong>z</strong>: Parar/Recomeçar recolha de pontos de controlo</li>
+            <li><strong>m</strong>: Alternar para curvas Bézier</li>
+            <li><strong>n</strong>: Alternar para curvas Catmull-Rom</li>
+            <li><strong>t</strong>: Ativar/Desativar tamanhos aleatórios (em animação)</li>
+            <li><strong>Click Esq</strong>: Adicionar ponto de controlo</li>
+            <li><strong>Click Esq contínuo</strong>: Adicionar pontos de controlo sequenciais</li>
+        </ul>
+    </div>
+
+    <div class="info">
+        <div id="segment-count">Segmentos: 20</div>
+        <div id="speed-display">Velocidade: 1.0x</div>
+    </div>
+</body>
+
+</html>
